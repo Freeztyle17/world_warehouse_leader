@@ -17,7 +17,7 @@ class CreateFinesTable extends Migration
             $table->id('fine_id');
             $table->foreignId('client_id')->constrained()->onDelete('cascade');
             $table->text('fine_description');
-            $table->foreignId('fine_type_id')->constrained()->onDelete('cascade');
+            $table->foreignId('fine_code_id')->constrained()->onDelete('cascade');
         });
     }
 

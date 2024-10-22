@@ -14,7 +14,7 @@ class CreatePhysicalPersonsTable extends Migration
     public function up()
     {
         Schema::create('physical_persons', function (Blueprint $table) {
-            $table->id('client_id');
+            $table->id();
             $table->string('surname');
             $table->string('name');
             $table->string('patronymic');

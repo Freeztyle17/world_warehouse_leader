@@ -14,7 +14,7 @@ class CreateFineCodesTable extends Migration
     public function up()
     {
         Schema::create('fine_codes', function (Blueprint $table) {
-            $table->id('fine_code_id');
+            $table->id();
             $table->text('description');
         });
     }

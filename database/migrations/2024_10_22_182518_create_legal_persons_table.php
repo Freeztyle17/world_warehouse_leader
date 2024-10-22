@@ -20,7 +20,7 @@ class CreateLegalPersonsTable extends Migration
             $table->string('inn');
             $table->string('kpp');
             $table->string('ogrn');
-            $table->foreignId('delegate_id')->constrained('physical_persons')->onDelete('cascade');
+            $table->foreignId('physical_persons_id')->constrained('physical_persons')->onDelete('cascade');
             $table->string('phone');
             $table->string('email')->unique();
             $table->text('address');

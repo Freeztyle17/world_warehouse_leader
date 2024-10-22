@@ -18,6 +18,7 @@ class CreateClientsTable extends Migration
             $table->unsignedBigInteger('person_id');
             $table->string('type');
             $table->string('login');
+            $table->unsignedBigInteger('password_reference');
             $table->foreign('password_reference')->references('id')->on('passwords')->onDelete('cascade');
         });
     }
