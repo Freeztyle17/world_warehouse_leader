@@ -19,7 +19,7 @@ class CreatePaymentDataTable extends Migration
             $table->string('payment_score');
         });
     }
-
+    //privet
     /**
      * Reverse the migrations.
      *
