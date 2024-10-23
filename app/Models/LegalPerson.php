@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class LegalPerson
- * 
+ *
  * @property int $client_id
  * @property string $client_full_name
  * @property string $client_short_name
@@ -23,11 +23,25 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $address
  * @property string $status
  * @property int $okved_code_id
- * 
  * @property PhysicalPerson $physical_person
  * @property OkvedCode $okved_code
- *
  * @package App\Models
+ * @method static \Illuminate\Database\Eloquent\Builder|LegalPerson newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|LegalPerson newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|LegalPerson query()
+ * @method static \Illuminate\Database\Eloquent\Builder|LegalPerson whereAddress($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LegalPerson whereClientFullName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LegalPerson whereClientId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LegalPerson whereClientShortName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LegalPerson whereEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LegalPerson whereInn($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LegalPerson whereKpp($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LegalPerson whereOgrn($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LegalPerson whereOkvedCodeId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LegalPerson wherePhone($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LegalPerson wherePhysicalPersonsId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|LegalPerson whereStatus($value)
+ * @mixin \Eloquent
  */
 class LegalPerson extends Model
 {

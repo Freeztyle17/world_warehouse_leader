@@ -11,19 +11,29 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Client
- * 
+ *
  * @property int $id
  * @property int $person_id
  * @property string $type
  * @property string $login
  * @property int $password_reference
- * 
  * @property Password $password
  * @property Collection|Fine[] $fines
  * @property Collection|PaymentDatum[] $payment_data
  * @property Collection|Operation[] $operations
- *
  * @package App\Models
+ * @property-read int|null $fines_count
+ * @property-read int|null $operations_count
+ * @property-read int|null $payment_data_count
+ * @method static \Illuminate\Database\Eloquent\Builder|Client newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Client newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Client query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Client whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Client whereLogin($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Client wherePasswordReference($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Client wherePersonId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Client whereType($value)
+ * @mixin \Eloquent
  */
 class Client extends Model
 {

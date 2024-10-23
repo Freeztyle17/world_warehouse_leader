@@ -11,16 +11,23 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Warehouse
- * 
+ *
  * @property int $id
  * @property int $zone_id
  * @property int $warehouse_number
- * 
  * @property WarehouseZone $warehouse_zone
  * @property Collection|Section[] $sections
  * @property Collection|Reservation[] $reservations
- *
  * @package App\Models
+ * @property-read int|null $reservations_count
+ * @property-read int|null $sections_count
+ * @method static \Illuminate\Database\Eloquent\Builder|Warehouse newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Warehouse newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Warehouse query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Warehouse whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Warehouse whereWarehouseNumber($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Warehouse whereZoneId($value)
+ * @mixin \Eloquent
  */
 class Warehouse extends Model
 {

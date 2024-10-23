@@ -11,13 +11,18 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class City
- * 
+ *
  * @property int $id
  * @property string $name
- * 
  * @property Collection|WarehouseDistrict[] $warehouse_districts
- *
  * @package App\Models
+ * @property-read int|null $warehouse_districts_count
+ * @method static \Illuminate\Database\Eloquent\Builder|City newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|City newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|City query()
+ * @method static \Illuminate\Database\Eloquent\Builder|City whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|City whereName($value)
+ * @mixin \Eloquent
  */
 class City extends Model
 {

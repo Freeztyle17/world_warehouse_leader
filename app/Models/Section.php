@@ -11,16 +11,23 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Section
- * 
+ *
  * @property int $id
  * @property int $warehouse_id
  * @property int $section_number
  * @property bool $status
- * 
  * @property Warehouse $warehouse
  * @property Collection|Reservation[] $reservations
- *
  * @package App\Models
+ * @property-read int|null $reservations_count
+ * @method static \Illuminate\Database\Eloquent\Builder|Section newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Section newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Section query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Section whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Section whereSectionNumber($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Section whereStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Section whereWarehouseId($value)
+ * @mixin \Eloquent
  */
 class Section extends Model
 {

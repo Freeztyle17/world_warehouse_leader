@@ -11,13 +11,18 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Password
- * 
+ *
  * @property int $id
  * @property string $password
- * 
  * @property Collection|Client[] $clients
- *
  * @package App\Models
+ * @property-read int|null $clients_count
+ * @method static \Illuminate\Database\Eloquent\Builder|Password newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Password newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Password query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Password whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Password wherePassword($value)
+ * @mixin \Eloquent
  */
 class Password extends Model
 {

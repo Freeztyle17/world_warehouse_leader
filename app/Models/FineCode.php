@@ -11,13 +11,18 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class FineCode
- * 
+ *
  * @property int $id
  * @property string $description
- * 
  * @property Collection|Fine[] $fines
- *
  * @package App\Models
+ * @property-read int|null $fines_count
+ * @method static \Illuminate\Database\Eloquent\Builder|FineCode newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|FineCode newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|FineCode query()
+ * @method static \Illuminate\Database\Eloquent\Builder|FineCode whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|FineCode whereId($value)
+ * @mixin \Eloquent
  */
 class FineCode extends Model
 {

@@ -11,13 +11,18 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Payment
- * 
+ *
  * @property int $id
  * @property bool $status
- * 
  * @property Collection|Operation[] $operations
- *
  * @package App\Models
+ * @property-read int|null $operations_count
+ * @method static \Illuminate\Database\Eloquent\Builder|Payment newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Payment newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Payment query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Payment whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Payment whereStatus($value)
+ * @mixin \Eloquent
  */
 class Payment extends Model
 {

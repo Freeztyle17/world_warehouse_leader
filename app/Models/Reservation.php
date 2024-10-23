@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Reservation
- * 
+ *
  * @property int $id
  * @property int $district_id
  * @property int $zone_id
@@ -20,14 +20,24 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $section_id
  * @property Carbon $start_date_of_reservation
  * @property Carbon $end_date_of_reservation
- * 
  * @property WarehouseDistrict $warehouse_district
  * @property WarehouseZone $warehouse_zone
  * @property Warehouse $warehouse
  * @property Section $section
  * @property Collection|Operation[] $operations
- *
  * @package App\Models
+ * @property-read int|null $operations_count
+ * @method static \Illuminate\Database\Eloquent\Builder|Reservation newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Reservation newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Reservation query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Reservation whereDistrictId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Reservation whereEndDateOfReservation($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Reservation whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Reservation whereSectionId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Reservation whereStartDateOfReservation($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Reservation whereWarehouseId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Reservation whereZoneId($value)
+ * @mixin \Eloquent
  */
 class Reservation extends Model
 {
